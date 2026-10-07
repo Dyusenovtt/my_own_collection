@@ -1,0 +1,8 @@
+---
+- name: Use collection role
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Include file_creator role
+      include_role:
+        name: my_own_namespace.yandex_cloud_elk.file_creator
